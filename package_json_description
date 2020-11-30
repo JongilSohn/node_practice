@@ -1,0 +1,24 @@
+// npm dev, start, test 등은 다 예약어라고 한다.
+npm run dev
+
+// script에다가
+"start": "node index.js"를
+넣게되면 터미널에서 해당 명령어로 index.js 실행
+
+
+{
+  "name": "node_practice",
+  "version": "1.0.0",
+  "description": "node online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "손종일",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid4": "^2.0.2"
+  }
+}

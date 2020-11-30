@@ -1,0 +1,5 @@
+//package.lock.json은 
+// -express는 -loadsh v3에 최적화
+// uuid4는 -loade v4에 최적화
+// 그렇다면 ? loadsh v4로 맞추게되면 express는 오류 발생 가능
+// 그렇기 때문에 package.lock.json에 명시가 되어 있다.

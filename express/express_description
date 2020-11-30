@@ -1,0 +1,32 @@
+왜 Express를 사용해야 하는가??
+
+1. 웹서비스 관점
+// 익스프레스를 사용하지 않고 웹서버를 띄워보기
+
+2. 프레임워크 선정시 고려해야 될 점
+// 핫피, 익스프레스. 세이지
+// 익스프레스 사용 이유는 제일 많이 사용하고 간단하기때문에
+// 개발자가 충원될때 충분히 인수인계, 유지보수 면에서 좋다.
+
+// 스텍오버플로우에서 많은 레퍼런스가 존재한다.
+
+
+
+
+1. 익스프레스를 사용하지 않고 웹서버를 띄워보기
+
+사용자는 요청하고 서버는 응답한다.
+
+Request ( URL 접속, form 전송 )
+-->  Response (텍스트, 이미지)
+
+const http = require('http');
+
+http.createServer((request, response) => {
+  response.writeHead(200, {'Content-Type' : 'text/plain'});
+  response.write('Hello Server');
+  response.end();
+}).listen(3000);
+
+// 1강, 2강 등 코드 확인하기
+https://github.com/parkjunyoung/express-online
